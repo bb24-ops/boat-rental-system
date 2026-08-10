@@ -1,4 +1,4 @@
-# ⛵ Boat Rental Management System
+# Boat Rental Management System
 
 [![Java](https://img.shields.io/badge/Language-Java-orange.svg)](https://www.java.com/)
 [![Architecture](https://img.shields.io/badge/Architecture-Client--Server-blue.svg)]()
@@ -8,7 +8,7 @@ A robust, full-stack **Client-Server Desktop Application** developed in Java, de
 
 ---
 
-## 📸 User Interface Overview
+## User Interface Overview
 
 ### 🔐 Authentication & Main Dashboard
 Secure administrator authentication opens up the main control dashboard, providing structured navigation through all system entities.
@@ -31,11 +31,6 @@ Administrators can easily manage rental contracts, insert items, select associat
 ## 🏗️ System Architecture & Design
 
 The application follows a traditional **Three-Tier Architecture** utilizing socket-based TCP communication between the client presentation layer and the server backend.
-
-+------------------+         TCP / Sockets         +------------------+         JDBC         +-------------------+
-|  Client Desktop  |  <=========>  |  Server Application |  <>  | MySQL Database   |
-|   (Swing GUI)    |   (Serialized Request/Resp)   | (Business Logic) |                      | (Data Persistence)|
-+------------------+                               +------------------+                      +-------------------+
 
 ### 📐 Full System Architecture
 The diagram below presents the complete structural decomposition of the application, highlighting the separation of UI Controllers, System Operations (SO pattern), Domain Logic, and the Generic Database Broker.
